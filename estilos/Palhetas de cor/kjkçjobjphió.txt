@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de cadastro</title>
+    <link rel="stylesheet" href="estilos/estilo_cadastro/media-query-cadastro01.css" media="screen and (min-width: 290px) and  (max-width: 700px)">
+    <link rel="stylesheet" href="estilos/estilo_cadastro/media-query-cadastro02.css" media="screen and (min-width: 700px) and  (max-width: 1100px)">
+    <link rel="stylesheet" href="estilos/estilo_cadastro/media-query-cadastro03.css" media="screen and (min-width: 1100px) and (max-width: 2700px)">
+</head>
+<body>  
+    <header>
+        <h1>Cadastro</h1>
+    </header>
+    <main>
+        <form action="#" method="post">
+            <label for="iemail">Email</label>
+            <input type="text" name="email" id="iemail">
+            <hr>
+
+            <label for="inome">Nome completo</label>
+            <input type="text" name="nome" id="inome">
+            <hr>
+
+            <label for="inickname">Apelido</label>
+            <input type="text" name="nickname" id="inickname">
+            <hr>
+            
+            <label for="isenha">Senha</label>
+            <input type="text" name="senha" id="isenha">
+            <hr>
+        </form>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
+-----------/////////////***********---------------//////////////-------------***********
+
+@charset "UTF-8";
+/* Configuração de estilo para aparelhos de celular */
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    margin: 10px
+}
+
+header > h1{
+    text-align: center;
+    font-size: 18pt;
+    padding: 10px 0px 15px 0px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.26);
+}
+
+header p{
+    text-align: center;
+    font-size: 11pt;
+    text-indent: 2em;
+    padding-bottom: 20px;
+    line-height: 1.5em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.342);
+}
+
+main{
+    background-color: rgba(255, 255, 255, 0.288);
+    width: 500px;
+    height: 400px;
+    border-radius: 15px;
+
+    padding: 10px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    box-shadow: 1px 1px 20px black;
+
+    transition: width .4s, height .4s;
+    transition-timing-function: ease;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 0fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+
+
+main > form label{
+    margin: 10px;
+}
+
+#iemail, #inome, #inickname, #isenha{
+    width: 90%;
+    height: 50%;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.863);
+    outline: none;
+    padding-left: 4px;
+    margin: 5px 0 5px 0;
+    margin: 10px 0 10px 0;
+}
+
+main hr{
+    margin: 0;
+    width: 10px;
+    position: relative;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    height: 2px;
+}

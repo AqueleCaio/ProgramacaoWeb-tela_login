@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+/* Configuração de estilo para aparelhos de celular */
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.imagem{
+    display: none;
+}
+
+header{
+    margin: 10px
+}
+
+header > h1{
+    text-align: center;
+    font-size: 18pt;
+    padding: 10px 0px 15px 0px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.26);
+}
+
+header h2{
+    text-align: center;
+    font-size: 11pt;
+    text-indent: 2em;
+    padding-bottom: 20px;
+    line-height: 1.5em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.342);
+}
+
+main{
+    background-color: rgba(255, 255, 255, 0.288);
+    width: 300px;
+    height: 410px;
+    border-radius: 15px;
+    color: rgb(61, 60, 42);
+
+    padding: 10px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.384);
+
+
+    transition: width .4s, height .4s;
+    transition-timing-function: ease;
+}
+
+main > .content form label{
+    margin: 10px;
+}
+
+main >  .content form #isenha, 
+main > .content form #iemail{
+    width: 80%;
+    height: 35px;
+    border-radius: 10px;
+    border: 0px solid rgba(0, 0, 0, 0.863);
+    outline: none;
+    padding-left: 4px;
+    margin: 5px 0 5px 0;
+    background-color: transparent;
+}
+
+main > .content button{
+    width: 95%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(255, 208, 0, 0.897);
+    color: white;
+    font-size: 11pt;
+    font-weight: bold;
+    border: 0px solid black;
+    margin: 20px 10px 5px 10px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.26);
+    box-shadow: 0px 0px 20px 3px rgb(237 209 10 / 98%);
+    transition: .4s;
+}
+
+main > .content button > a{
+    color: white;
+    text-decoration: none;
+}
+
+main .link{
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: small;
+    margin: 10px;
+}
+
+main .link:hover{
+    text-decoration: underline;
+}
+
+main > .content button:hover{
+    cursor: pointer;
+    background-color: rgb(255, 209, 3);
+    box-shadow: 0px 0px 20px 10px rgb(255, 208, 0);
+}
+
+hr{
+    width: 0%;
+    position: absolute;
+    left: 5%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.247);
+    height: 1px;
+    transition-duration: .4s;
+}
+
+.linha_destaque{
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    border: none;
+    background-color: black;
+    height: 1px;
+}

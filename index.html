@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="estilos/media-query01.css" media="screen and (min-width: 290px) and  (max-width: 700px)">
+    <link rel="stylesheet" href="estilos/media-query02.css" media="screen and (min-width: 700px) and  (max-width: 1100px)">
+    <link rel="stylesheet" href="estilos/media-query03.css" media="screen and (min-width: 1100px) and (max-width: 2700px)">
+</head>
+<body>  
+    <main>
+        <section class="imagem">
+            <img src="imagens/figira_animada_amarelo.svg" alt="Imagem ao lado do fomulário">
+        </section>
+        <section class="content">
+
+            <header>
+                <h1>Login</h1>
+                <h2>Seja bem vindo ao [NOME]. Faça o login ou registre-se para poder ver o que está rolando em Itajubá hoje.</h2>
+            </header>
+
+            <form action="#" method="post">
+                <label for="iemail"><img src="imagens/icons8-mensagem-24.png" alt="icone do perfil"></label>
+                <input type="email" name="email" id="iemail" required maxlength="35" placeholder=" Email"> <br>
+                <hr id="line01">
+
+                <label for="isenha"><img src="imagens/icons8-trancar-24.png" alt="icone de senha"></label>
+                <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" placeholder=" Senha (8-20)"> <br>
+                <hr id="line02">
+                
+                <button id="entrar" type="submit">Entrar</button>
+            </form>
+            
+            <button id="cadastrar">Cadastrar</button>
+            
+            <a class="link" href="#" target="_parent" rel="follow">Esqueci minha senha</a>
+        </section>
+    </main>
+    <script src="script_login.js"></script>
+</body>
+</html>
