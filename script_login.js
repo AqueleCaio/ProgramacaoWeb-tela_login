@@ -1,45 +1,21 @@
-const botao_entrar = document.getElementById('entrar')
-
-const input_email = document.getElementById('iemail')
-const input_senha = document.getElementById('isenha')
-
-const linha1 = document.getElementById('line01')
-const linha2 = document.getElementById('line02')
-
-/* ******************************************************* */
-
-input_email.addEventListener('click', (e) => {
+$('#iemail').click((e) => {
     e.preventDefault()
-    linha1.classList.add('linha_destaque')
-    
+    $('#line01').addClass('linha_destaque')
 })
 
-input_email.addEventListener('blur', (e) => {
+$('#iemail').blur((e) => {
     e.preventDefault()
-    linha1.classList.remove('linha_destaque')
-    
+    $('#line01').removeClass('linha_destaque')
 })
 
 /* ******************************************************* */
 
-
-input_senha.addEventListener('click', (e) => {
+$('#isenha').click((e) => {
     e.preventDefault()
-    linha2.classList.add('linha_destaque')
-    
+    $('#line02').addClass('linha_destaque')
 })
 
-input_senha.addEventListener('blur', (e) => {
+$('#isenha').blur((e) => {
     e.preventDefault()
-    linha2.classList.remove('linha_destaque')
-    
+    $('#line02').removeClass('linha_destaque')
 })
-
-/* ******************************************************* */
-
-/*
-botao_entrar.addEventListener('click', (e) => {
-    e.preventDefault()
-    window.location.href = "#"; //link para página principal.
-});
-*/
