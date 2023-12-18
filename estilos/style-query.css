@@ -97,6 +97,12 @@ main > .content button{
     transition: .4s;
 }
 
+main > .content button:hover{
+    cursor: pointer;
+    background-color: rgb(255, 209, 3);
+    box-shadow: 0px 0px 20px 10px rgb(255, 208, 0);
+}
+
 main .link{
     display: grid;
     place-items: center;
@@ -110,12 +116,6 @@ main .link{
 
 main .link:hover{
     text-decoration: underline;
-}
-
-main > .content button:hover{
-    cursor: pointer;
-    background-color: rgb(255, 209, 3);
-    box-shadow: 0px 0px 20px 10px rgb(255, 208, 0);
 }
 
 hr{
